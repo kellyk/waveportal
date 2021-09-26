@@ -16,7 +16,7 @@ function formatDate(dateString) {
 function formatAddress(str) {
   const first = str.substring(0, 7);
   const last = str.substring(str.length - 7);
-  const url = `https://etherscan.io/address/${str}`;
+  const url = `https://rinkeby.etherscan.io/address/${str}`;
   const formatted = first + '....' + last;
   return <a target="_blank" rel="noopener noreferrer" href={url}>{formatted}</a>;
 }
