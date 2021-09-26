@@ -190,7 +190,7 @@ export default function App() {
         </div>
 
         <div className="bio">
-          I'm Kelly. Connect your Ethereum wallet and wave at me!
+          I'm <a style={{ textDecoration:"underline" }} href="https://twitter.com/kng">Kelly</a>. Connect your Ethereum wallet and wave at me!
         </div>
 
         { !currAccount ? renderConnectButton() : renderWaveForm() }

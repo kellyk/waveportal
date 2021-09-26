@@ -1,5 +1,5 @@
 body {
-  background: #222;
+  background: #111;
   color: #eee;
 }
 
@@ -73,8 +73,13 @@ table, td, thead {
 }
 
 .wave {
+  background: #111;
   border: 1px solid rgb(104, 4, 87);
   padding: 1em 2em;
+}
+
+.wave:hover {
+  background: #21111e;
 }
 
 .waveAddress, .waveDate {
