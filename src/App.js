@@ -10,7 +10,7 @@ const contractABI = abi.abi;
 
 function formatDate(dateString) {
   const messageDate = new Date(dateString);
-  return date.format(messageDate, "MMM DD, YYYY, h:MM A");
+  return date.format(messageDate, "MMM DD, YYYY, h:mm A");
 }
 
 function formatAddress(str) {
