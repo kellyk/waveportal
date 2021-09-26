@@ -46,6 +46,7 @@ export default function App() {
       console.log('Connected!', accounts[0]);
       setCurrAccount(accounts[0]);
       getWaveCount();
+      getAllWaves();
     });
   };
 

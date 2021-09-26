@@ -35,25 +35,11 @@ a:hover {
 .bio {
   text-align: center;
   color: #f98ae6;
-  margin-top: 16px;
+  margin: 16px 0 30px;
 }
 
 .waveForm {
   display: flex;
-  margin-top: 25px;
-}
-
-.waveButton {
-  cursor: pointer;
-  padding: 12px;
-  border: 1px solid #f98ae6;
-  color: #f98ae6;
-  text-transform: uppercase;
-  font-size: 1.1em;
-  font-weight: bold;
-  background: none;
-  flex-shrink: 1;
-  margin-left: 1em;
 }
 
 .waveInput {
@@ -106,4 +92,59 @@ table, td, thead {
 .waveMessage {
   padding: 1em 0;
   font-size: 1.1em;
+}
+
+.waveButton {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+	outline: none;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.waveButton:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	background: #f98ae6;
+}
+
+.waveButton:hover,
+.waveButton:active {
+	color: #fff;
+}
+
+.waveButton:hover:after,
+.waveButton:active:after {
+	height: 100%;
+}
+
+.waveButton {
+  cursor: pointer;
+  padding: 12px;
+  border: 1px solid #f98ae6;
+  color: #f98ae6;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: bold;
+  background: none;
+  flex-shrink: 1;
+  margin-left: 1em;
 }
